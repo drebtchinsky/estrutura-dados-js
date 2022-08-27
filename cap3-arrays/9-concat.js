@@ -2,6 +2,9 @@ const zero = 0;
 const positiveNumbers = [1, 2, 3];
 const negativeNumbers = [-3, -2, -1];
 
+let numbers1 = negativeNumbers.concat(zero, positiveNumbers);
+console.log(numbers1);
+
 Array.prototype.junta = function (...arrays) {
   const newArray = this;
   for (let i = 0; i < arrays.length; i++) {
@@ -24,5 +27,5 @@ eArray = function (array) {
   return false;
 };
 
-let numbers = negativeNumbers.junta(zero, positiveNumbers);
-console.log(numbers);
+let numbers2 = negativeNumbers.junta(zero, positiveNumbers);
+console.log(numbers2);
